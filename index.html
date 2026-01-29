@@ -1,244 +1,1527 @@
-<!DOCTYPE HTML>
-<!--
-	Theme: Editorial by HTML5 UP (CCA 3.0)
-  	Personalized for Sandip Singh
--->
-<html>
-	<head>
-		<title>Sandip Singh — Blockchain Developer</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandip Singh — Blockchain Developer | Smart Contracts Engineer</title>
+    <meta name="description"
+        content="Senior Blockchain Developer with 5+ years of experience in Escrow, Payments, and Smart Contract Engineering across Ethereum, Polygon, Solana, and Avalanche.">
+    <meta name="keywords"
+        content="Blockchain Developer, Smart Contracts, Solidity, Rust, Ethereum, Solana, Web3, Escrow, Payments">
+    <meta name="author" content="Sandip Singh">
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sandip Singh — Blockchain Developer | Smart Contracts Engineer">
+    <meta property="og:description"
+        content="Senior Blockchain Developer with 5+ years of experience in Escrow, Payments, and Smart Contract Engineering.">
+    <meta property="og:url" content="https://sandip-sol.github.io">
+    <meta name="twitter:card" content="summary_large_image">
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Sandip Singh</strong> · Blockchain Developer</a>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-square-x-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="https://github.com/sandip-sol" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									</ul>
-								</header>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Hi, I’m Sandip 👋</h1>
-											<p>Blockchain Developer — Solidity · Ethereum · Solana (Rust) · Node.js · AWS</p>
-										</header>
-										<p>
-											A versatile blockchain engineer with 4+ years building secure smart contracts,
-                            				payment/escrow flows,
-                            				and protocol integrations. Comfortable across EVM (Solidity) and Solana (Rust), with
-                            				hands‑on experience
-                            				deploying clusters/devnets, optimizing gas, and shipping audited, well‑tested code.
-										</p>
-										<ul class="actions">
-											<li><a href="#" class="button big">Learn More</a></li>
-											<li><a href="#experience" class="button big">View Experience</a></li>
-                            				<li><a href="#skills" class="button">Skills</a></li>
-                            				<li><a href="#contact" class="button">Contact</a></li>
-										</ul>
-									</div>
-									<span class="image object">
-										<img src="images/pic10.jpg" alt="" />
-									</span>
-								</section>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Highlights</h2>
-									</header>
-									<div class="features">
-										<article>
-											<span class="icon fa-gem"></span>
-											<div class="content">
-												<h3>Secure Escrow & Payments</h3>
-												<p>Designed escrow contracts with milestone releases and oracle‑driven multi‑currency
-                                    				support on Polygon/Ethereum.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-paper-plane"></span>
-											<div class="content">
-												<h3>Protocol & Devnets</h3>
-												<p>Forked Solana, created multi‑node clusters, and benchmarked TPS with custom
-                                    				tokenomics and staking DApps.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-rocket"></span>
-											<div class="content">
-												<h3>Testing & Tooling</h3>
-												<p>Hardhat/ethers.js test suites, CI‑ready integration tests, and gas/size optimizations
-                                    				for production readiness.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-signal"></span>
-											<div class="content">
-												<h3>Infra & Monitoring</h3>
-												<p>AWS provisioning and Node.js monitoring services for reliability and on‑chain/off‑chain observability.</p>
-											</div>
-										</article>
-									</div>
-								</section>
+    <style>
+        /* ===== CSS Variables (Dark Theme) ===== */
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-tertiary: #1a1a24;
+            --bg-card: #16161e;
+            --bg-card-hover: #1e1e28;
 
-							<!-- Section -->
-								<section id="experience">
-									<header class="major">
-										<h2>Experience</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="AI Tech Solutions" /></a>
-											<h3>Blockchain Developer — AI Tech Solutions Limited</h3>
-											<p><em>Aug 2024 – Oct 2025 · Bengaluru</em></p>
-											<p>Created Escrow Smart Contracts to securely hold and release funds by milestones. Built Ethereum‑based payment gateway modules integrated with Escrow and Oracle systems for multi‑currency. Collaborated with backend to ship decentralized payment workflows using Solidity, Hardhat, ethers.js. Wrote unit/integration tests for security, scalability, and audit readiness. Optimized gas and contract architecture for Polygon/Ethereum testnets.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>												
-											</ul>											
-										</article>
+            --text-primary: #e8e8ed;
+            --text-secondary: #a0a0b0;
+            --text-muted: #6b6b7b;
 
-										<!-- Gather Software Pvt. Ltd. -->
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="Hydro Online" /></a>
-											<h3>Blockchain Developer — Gather Software Pvt. Ltd.</h3>
-											<p><em>Jan 2022 – Jun 2024</em></p>
-											<p>Led development of a forked Solana network with custom native token and tokenomics. Deployed smart contracts and set up Devnet for testing. Built monitoring services and web automation (Node.js/Puppeteer). Developed a marketplace for distributed compute; shipped Staking & Masternode DApps. Researched PoS L1 solutions and optimized JS‑based auto‑miner for performance.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
+            --accent-primary: #6366f1;
+            --accent-secondary: #818cf8;
+            --accent-glow: rgba(99, 102, 241, 0.15);
 
-										<!-- Sodio Technology Pvt. Ltd. -->
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="Sodio Technology" /></a>
-											<h3>Junior Blockchain Developer — Sodio Technology Pvt. Ltd.</h3>
-											<p><em>Apr 2020 – Oct 2021</em></p>
-											<p>Client discovery, research, and solution prototypes. Wrote and deployed Solidity contracts on Ethereum. Developed REST services to improve UX and integration.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>										
-									</div>
-								</section>
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-hover: rgba(255, 255, 255, 0.15);
 
-						</div>
-					</div>
+            --gradient-accent: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --gradient-subtle: linear-gradient(180deg, rgba(99, 102, 241, 0.08) 0%, transparent 100%);
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
+            --transition-fast: 0.15s ease;
+            --transition-normal: 0.3s ease;
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Generic</a></li>
-										<li><a href="elements.html">Elements</a></li>
-										<li>
-											<span class="opener">Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Etiam Dolore</a></li>
-										<li><a href="#">Adipiscing</a></li>
-										<li>
-											<span class="opener">Another Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Maximus Erat</a></li>
-										<li><a href="#">Sapien Mauris</a></li>
-										<li><a href="#">Amet Lacinia</a></li>
-									</ul>
-								</nav>
+            --container-width: 1200px;
+            --section-padding: 6rem 0;
+        }
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>
+        /* ===== Reset & Base ===== */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">ssinghpro44@gmail.com</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">Bengaluru<br />
-										Karnataka, India </li>
-									</ul>
-								</section>
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
 
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
 
-						</div>
-					</div>
+        ::selection {
+            background: var(--accent-primary);
+            color: white;
+        }
 
-			</div>
+        a {
+            color: var(--accent-secondary);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        a:hover {
+            color: var(--text-primary);
+        }
 
-	</body>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* ===== Layout ===== */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: var(--section-padding);
+        }
+
+        /* ===== Typography ===== */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 600;
+            line-height: 1.3;
+            color: var(--text-primary);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+        }
+
+        h2 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+
+        .section-heading {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .section-heading h2 {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 0.75rem;
+        }
+
+        .section-heading h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+
+        .section-heading p {
+            color: var(--text-secondary);
+            margin-top: 1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ===== Navigation ===== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(10, 10, 15, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--text-primary);
+        }
+
+        .navbar-brand span {
+            color: var(--accent-primary);
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .navbar-nav a {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color var(--transition-fast);
+        }
+
+        .navbar-nav a:hover {
+            color: var(--text-primary);
+        }
+
+        .navbar-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 5rem;
+            background: var(--gradient-subtle);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--accent-secondary);
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .hero-title {
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-role {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero-description {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 540px;
+            margin-bottom: 2rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            width: 350px;
+            height: 350px;
+        }
+
+        .hero-image-wrapper::before {
+            content: '';
+            position: absolute;
+            inset: -10px;
+            background: var(--gradient-accent);
+            border-radius: 50%;
+            opacity: 0.2;
+            filter: blur(30px);
+        }
+
+        .hero-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--border-color);
+        }
+
+        /* ===== Buttons ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.75rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+        }
+
+        .btn-primary {
+            background: var(--gradient-accent);
+            color: white;
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
+            color: white;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--bg-tertiary);
+            border-color: var(--border-hover);
+            color: var(--text-primary);
+        }
+
+        /* ===== About Section ===== */
+        .about {
+            background: var(--bg-secondary);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all var(--transition-normal);
+        }
+
+        .stat-card:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-4px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        /* ===== Experience Section ===== */
+        .experience-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 2.5rem;
+            padding-bottom: 3rem;
+            border-left: 2px solid var(--border-color);
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-primary);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px var(--bg-primary);
+        }
+
+        .timeline-header {
+            margin-bottom: 1rem;
+        }
+
+        .timeline-company {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-role {
+            color: var(--accent-secondary);
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-date {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .timeline-content ul {
+            list-style: none;
+        }
+
+        .timeline-content li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .timeline-content li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: bold;
+        }
+
+        /* ===== Skills Section ===== */
+        .skills {
+            background: var(--bg-secondary);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all var(--transition-normal);
+        }
+
+        .skill-category:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-4px);
+        }
+
+        .skill-category-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--accent-glow);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .skill-category-icon i {
+            font-size: 1.25rem;
+            color: var(--accent-primary);
+        }
+
+        .skill-category h3 {
+            margin-bottom: 1rem;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            border: 1px solid var(--border-color);
+            transition: all var(--transition-fast);
+        }
+
+        .skill-tag:hover {
+            border-color: var(--accent-primary);
+            color: var(--text-primary);
+        }
+
+        /* ===== Projects Section ===== */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all var(--transition-normal);
+        }
+
+        .project-card:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-4px);
+        }
+
+        .project-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--accent-glow);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-icon i {
+            font-size: 1.5rem;
+            color: var(--accent-primary);
+        }
+
+        .project-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        .project-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .project-tech span {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            background: var(--bg-tertiary);
+            color: var(--accent-secondary);
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+        }
+
+        /* ===== Publications Section ===== */
+        .publications {
+            background: var(--bg-secondary);
+        }
+
+        .publication-card {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+        }
+
+        .publication-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-venue {
+            color: var(--accent-secondary);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-year {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* ===== Education Section ===== */
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .education-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all var(--transition-normal);
+        }
+
+        .education-card:hover {
+            border-color: var(--accent-primary);
+        }
+
+        .education-card h3 {
+            color: var(--accent-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .education-institution {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-years {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .education-gpa {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* ===== Contact Section ===== */
+        .contact {
+            background: var(--bg-secondary);
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-content p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-secondary);
+            transition: all var(--transition-normal);
+        }
+
+        .contact-link:hover {
+            border-color: var(--accent-primary);
+            color: var(--text-primary);
+            transform: translateY(-2px);
+        }
+
+        .contact-link i {
+            font-size: 1.25rem;
+            color: var(--accent-primary);
+        }
+
+        /* ===== Footer ===== */
+        .footer {
+            background: var(--bg-primary);
+            border-top: 1px solid var(--border-color);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 992px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-content {
+                order: 2;
+            }
+
+            .hero-image {
+                order: 1;
+            }
+
+            .hero-description {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-cta {
+                justify-content: center;
+            }
+
+            .hero-image-wrapper {
+                width: 280px;
+                height: 280px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .navbar-nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--bg-secondary);
+                flex-direction: column;
+                padding: 1rem 2rem;
+                gap: 1rem;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            .navbar-nav.active {
+                display: flex;
+            }
+
+            .navbar-toggle {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --section-padding: 4rem 0;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-link {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* ===== Animations ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 0.4;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Card hover shine effect */
+        .card-shine {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-shine::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .card-shine:hover::after {
+            left: 100%;
+        }
+
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-accent);
+            border: none;
+            border-radius: 12px;
+            color: white;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-normal);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+        }
+
+        /* Availability badge */
+        .availability-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #22c55e;
+            margin-bottom: 1rem;
+        }
+
+        .availability-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #22c55e;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Sandip<span>.</span></a>
+            <ul class="navbar-nav" id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="navbar-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="availability-badge">Open to Opportunities</span>
+                <p class="hero-subtitle">Hello, I'm</p>
+                <h1 class="hero-title">Sandip Singh</h1>
+                <p class="hero-role">Blockchain Developer | Escrow & Payments | Smart Contracts Engineer</p>
+                <p class="hero-description">
+                    A versatile blockchain engineer with 5+ years of experience building secure smart contracts,
+                    payment/escrow flows, and protocol integrations. Comfortable across EVM chains (Solidity)
+                    and Solana (Rust), with hands-on experience deploying clusters/devnets, optimizing gas,
+                    and shipping audited, well-tested code.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-folder-open"></i> View Projects
+                    </a>
+                    <a href="resume/Sandip-2026.pdf" class="btn btn-outline" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="images/IMG_2026.jpg" alt="Sandip Singh">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-heading">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Blockchain Developer and Smart Contracts Engineer with over five years of experience
+                        designing and building decentralized systems that power real-world payments and escrow
+                        solutions.
+                    </p>
+                    <p>
+                        My expertise spans across multiple blockchain ecosystems, including <strong>Ethereum</strong>,
+                        <strong>Polygon</strong>, <strong>Solana</strong>, and <strong>Avalanche</strong>. I specialize
+                        in developing secure escrow contracts, payment gateway integrations, gasless transactions, and
+                        meta-transaction systems.
+                    </p>
+                    <p>
+                        I'm proficient in <strong>Solidity</strong> and <strong>Rust</strong>, with deep knowledge of
+                        tools like Hardhat, Foundry, Anchor, ethers.js, Web3.js, Wagmi, and Viem. I've also worked
+                        extensively with Subgraphs and Substreams for on-chain data indexing.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">5+</span>
+                        <p class="stat-label">Years of Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">3+</span>
+                        <p class="stat-label">Blockchain Networks</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">2</span>
+                        <p class="stat-label">Languages (Solidity & Rust)</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">6+</span>
+                        <p class="stat-label">Major Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Experience</h2>
+                <p>A track record of building production-ready blockchain solutions</p>
+            </div>
+            <div class="experience-timeline">
+                <!-- AI Tech Solutions -->
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h4 class="timeline-company">AI Tech Solutions Limited</h4>
+                        <p class="timeline-role">Blockchain Developer</p>
+                        <p class="timeline-date">Aug 2024 – Oct 2025 · Bengaluru</p>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Created Escrow Smart Contracts to securely hold and release funds based on milestones
+                            </li>
+                            <li>Built Ethereum-based payment gateway modules integrated with Escrow and Oracle systems
+                                for multi-currency support</li>
+                            <li>Implemented gasless transactions and meta-transaction systems for improved UX</li>
+                            <li>Collaborated with backend teams to ship decentralized payment workflows using Solidity,
+                                Hardhat, and ethers.js</li>
+                            <li>Wrote comprehensive unit/integration tests for security, scalability, and audit
+                                readiness</li>
+                            <li>Optimized gas consumption and contract architecture for Polygon/Ethereum testnets</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Gather Software -->
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h4 class="timeline-company">Gather Software Pvt. Ltd.</h4>
+                        <p class="timeline-role">Blockchain Developer</p>
+                        <p class="timeline-date">Jan 2022 – Jun 2024</p>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Led development of a forked Solana L1 network with custom native token and tokenomics
+                            </li>
+                            <li>Deployed smart contracts and set up Devnet for testing; benchmarked TPS</li>
+                            <li>Built monitoring services and web automation using Node.js/Puppeteer</li>
+                            <li>Developed a marketplace for distributed compute resources</li>
+                            <li>Shipped production-ready Staking & Masternode DApps</li>
+                            <li>Integrated Subgraphs/Substreams for on-chain data indexing</li>
+                            <li>Implemented Wagmi & Viem for frontend blockchain integrations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sodio Technology -->
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h4 class="timeline-company">Sodio Technology Pvt. Ltd.</h4>
+                        <p class="timeline-role">Junior Blockchain Developer</p>
+                        <p class="timeline-date">Apr 2020 – Oct 2021</p>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Developed Node.js dashboards for client-facing analytics and monitoring</li>
+                            <li>Built web automation tools using Puppeteer for data aggregation</li>
+                            <li>Created REST APIs for backend services and blockchain integration</li>
+                            <li>Wrote and deployed Solidity contracts on Ethereum</li>
+                            <li>Participated in client discovery, research, and solution prototyping</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Skills</h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Blockchain & Web3 -->
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <h3>Blockchain & Web3</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Smart Contracts</span>
+                        <span class="skill-tag">Escrow Systems</span>
+                        <span class="skill-tag">Payment Gateways</span>
+                        <span class="skill-tag">Oracles</span>
+                        <span class="skill-tag">Gasless Transactions</span>
+                        <span class="skill-tag">Meta-Transactions</span>
+                        <span class="skill-tag">Security Auditing</span>
+                    </div>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Solidity</span>
+                        <span class="skill-tag">Rust</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Frameworks -->
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Hardhat</span>
+                        <span class="skill-tag">Foundry</span>
+                        <span class="skill-tag">Anchor</span>
+                        <span class="skill-tag">Remix</span>
+                        <span class="skill-tag">Truffle</span>
+                        <span class="skill-tag">Ethers.js</span>
+                        <span class="skill-tag">Web3.js</span>
+                        <span class="skill-tag">Wagmi</span>
+                        <span class="skill-tag">Viem</span>
+                        <span class="skill-tag">Subgraphs</span>
+                        <span class="skill-tag">Substreams</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Projects</h2>
+                <p>Highlights of my work in blockchain development</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Escrow & Payment Gateway -->
+                <div class="project-card card-shine">
+                    <div class="project-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Escrow & Payment Gateway</h3>
+                    <p>
+                        <strong>Problem:</strong> Traditional payment systems lack transparency and trust for
+                        milestone-based transactions.<br><br>
+                        <strong>Solution:</strong> Designed and built secure escrow smart contracts with milestone-based
+                        fund releases,
+                        integrated with Oracle systems for multi-currency support. Implemented gasless transactions for
+                        seamless user experience.
+                    </p>
+                    <div class="project-tech">
+                        <span>Solidity</span>
+                        <span>Hardhat</span>
+                        <span>Ethers.js</span>
+                        <span>Polygon</span>
+                        <span>Ethereum</span>
+                    </div>
+                </div>
+
+                <!-- Blockchain Migration-->
+                <div class="project-card card-shine">
+                    <div class="project-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Blockchain Migration</h3>
+                    <p>
+                        <strong>Problem:</strong> Ethereum Layer-2 solutions struggle with sustainability, scalability
+                        under peak demand, and latency caused by reliance on Layer-1 settlement, which limits their
+                        effectiveness for high-traffic applications.<br><br>
+                        <strong>Solution:</strong> Forked Solana blockchain (sustainable, fast, and cheaper),
+                        implemented
+                        custom native token with unique
+                        tokenomics.
+                        Deployed multi-node devnet clusters, conducted TPS benchmarking, and built staking mechanisms.
+                    </p>
+                    <div class="project-tech">
+                        <span>Rust</span>
+                        <span>Solana</span>
+                        <span>Node.js</span>
+                        <span>AWS</span>
+                    </div>
+                </div>
+
+                <!-- Staking & Masternode DApps -->
+                <div class="project-card card-shine">
+                    <div class="project-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Staking & Masternode DApps</h3>
+                    <p>
+                        <strong>Problem:</strong> Users need intuitive interfaces to participate in network staking and
+                        run masternodes.<br><br>
+                        <strong>Solution:</strong> Built full-featured staking and masternode DApps with real-time
+                        rewards tracking,
+                        validator status monitoring, and seamless wallet integrations using Wagmi and Viem.
+                    </p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Wagmi</span>
+                        <span>Viem</span>
+                        <span>Subgraphs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications" id="publications">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Publications</h2>
+            </div>
+            <div class="publication-card card-shine">
+                <div class="project-icon" style="margin-bottom: 1rem;">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h3>IEEE Conference Publication</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 0.75rem; line-height: 1.6;">
+                    Published research work presented at IEEE International Conference on Emerging Technologies and
+                    Innovation.
+                </p>
+                <p class="publication-venue"><i class="fas fa-university" style="margin-right: 0.5rem;"></i>IEEE
+                    International Conference</p>
+                <p class="publication-year"><i class="fas fa-calendar-alt" style="margin-right: 0.5rem;"></i>2019</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Education</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>Master of Technology</h3>
+                    <p class="education-institution">NERIST (North Eastern Regional Institute of Science and Technology)
+                    </p>
+                    <p class="education-years">2016 – 2018</p>
+                </div>
+                <div class="education-card">
+                    <h3>Bachelor of Technology</h3>
+                    <p class="education-institution">SHIATS (Sam Higginbottom Institute of Agriculture, Technology and
+                        Sciences)</p>
+                    <p class="education-years">2012 – 2016</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <p>
+                    I'm currently open to new opportunities in blockchain development, smart contract engineering,
+                    and Web3 architecture. Feel free to reach out!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:singhsandip44@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>singhsandip44@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sandip-singh-30153616a/
+" class="contact-link" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/sandip-sol" class="contact-link" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://t.me/sandip_sol" class="contact-link" target="_blank" rel="noopener">
+                        <i class="fab fa-telegram"></i>
+                        <span>Telegram</span>
+                    </a>
+                </div>
+                <a href="mailto:singhsandip44@gmail.com" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sandip Singh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            // Navbar effect
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(10, 10, 15, 0.95)';
+            } else {
+                navbar.style.background = 'rgba(10, 10, 15, 0.85)';
+            }
+            // Back to top visibility
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Scroll Reveal Animation
+        const revealElements = document.querySelectorAll('.section-heading, .stat-card, .skill-category, .project-card, .timeline-item, .education-card, .publication-card');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100);
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        revealElements.forEach(el => {
+            el.classList.add('reveal');
+            revealObserver.observe(el);
+        });
+
+        // Animated stat counters
+        const statNumbers = document.querySelectorAll('.stat-number');
+        let countersAnimated = false;
+
+        const animateCounters = () => {
+            if (countersAnimated) return;
+
+            statNumbers.forEach(stat => {
+                const target = stat.textContent;
+                const numericPart = parseInt(target);
+                const suffix = target.replace(/[0-9]/g, '');
+                let current = 0;
+                const increment = numericPart / 30;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= numericPart) {
+                        stat.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        stat.textContent = Math.floor(current) + suffix;
+                    }
+                }, 50);
+            });
+            countersAnimated = true;
+        };
+
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const aboutStats = document.querySelector('.about-stats');
+        if (aboutStats) statsObserver.observe(aboutStats);
+    </script>
+</body>
+
 </html>
