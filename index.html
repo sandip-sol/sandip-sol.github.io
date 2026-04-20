@@ -1365,14 +1365,40 @@
                         <span>RainbowKit</span>
                         <span>EIP-712</span>
                     </div>
-                    <div style="margin-top: 1.25rem;">
+                    <div style="margin-top: 1.4rem; display: flex; align-items: center; gap: 0.75rem;">
                         <a href="https://youtu.be/PkLwwUncr6w" target="_blank" rel="noopener"
-                            style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.45rem 1rem; background: rgba(99,102,241,0.12); border: 1px solid rgba(99,102,241,0.35); border-radius: 8px; color: var(--accent-primary); font-size: 0.85rem; font-weight: 500; text-decoration: none; transition: all 0.2s ease;"
-                            onmouseover="this.style.background='rgba(99,102,241,0.22)'"
-                            onmouseout="this.style.background='rgba(99,102,241,0.12)'">
-                            <i class="fab fa-youtube"></i> Watch Demo
+                            style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.55rem 1.2rem; background: linear-gradient(135deg, #ff0000, #cc0000); border: none; border-radius: 9px; color: #fff; font-size: 0.88rem; font-weight: 600; text-decoration: none; box-shadow: 0 4px 18px rgba(220,0,0,0.45); transition: all 0.25s ease; letter-spacing: 0.02em;"
+                            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 7px 24px rgba(220,0,0,0.6)';"
+                            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 18px rgba(220,0,0,0.45)';">
+                            <span
+                                style="position:relative; display:inline-flex; align-items:center; justify-content:center;">
+                                <span
+                                    style="position:absolute; width:22px; height:22px; border-radius:50%; background:rgba(255,255,255,0.25); animation: ytPulse 1.6s ease-out infinite;"></span>
+                                <i class="fab fa-youtube" style="font-size: 1.1rem; position:relative; z-index:1;"></i>
+                            </span>
+                            Watch Demo
                         </a>
+                        <span style="font-size: 0.75rem; color: var(--text-muted, #888); font-style: italic;">Project
+                            walkthrough</span>
                     </div>
+                    <style>
+                        @keyframes ytPulse {
+                            0% {
+                                transform: scale(1);
+                                opacity: 0.7;
+                            }
+
+                            70% {
+                                transform: scale(2.2);
+                                opacity: 0;
+                            }
+
+                            100% {
+                                transform: scale(2.2);
+                                opacity: 0;
+                            }
+                        }
+                    </style>
                 </div>
             </div>
         </div>
