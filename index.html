@@ -549,16 +549,19 @@
         /* ===== Projects Section ===== */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            align-items: stretch;
         }
 
         .project-card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 16px;
-            padding: 2rem;
+            padding: 1.5rem;
             transition: all var(--transition-normal);
+            display: flex;
+            flex-direction: column;
         }
 
         .project-card:hover {
@@ -567,14 +570,14 @@
         }
 
         .project-icon {
-            width: 56px;
-            height: 56px;
+            width: 48px;
+            height: 48px;
             background: var(--accent-glow);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         .project-icon i {
@@ -583,18 +586,74 @@
         }
 
         .project-card h3 {
-            margin-bottom: 1rem;
+            margin-bottom: 0.6rem;
         }
 
         .project-card p {
             color: var(--text-secondary);
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Read More */
+        .card-desc-wrap {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-desc {
+            color: var(--text-secondary);
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            margin-bottom: 0.5rem;
+            line-height: 1.65;
+        }
+
+        .card-desc.expanded {
+            display: block;
+            -webkit-line-clamp: unset;
+            line-clamp: unset;
+            overflow: visible;
+        }
+
+        .read-more-btn {
+            background: none;
+            border: none;
+            color: var(--accent-primary);
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 0;
+            margin-bottom: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            transition: opacity 0.2s;
+            letter-spacing: 0.02em;
+        }
+
+        .read-more-btn:hover {
+            opacity: 0.75;
+        }
+
+        .read-more-btn i {
+            font-size: 0.75rem;
+            transition: transform 0.25s;
+        }
+
+        .read-more-btn.expanded i {
+            transform: rotate(180deg);
         }
 
         .project-tech {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
+            margin-top: auto;
         }
 
         .project-tech span {
@@ -741,6 +800,10 @@
 
         /* ===== Responsive ===== */
         @media (max-width: 992px) {
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             .hero .container {
                 grid-template-columns: 1fr;
                 text-align: center;
@@ -1279,14 +1342,21 @@
                         <i class="fas fa-lock"></i>
                     </div>
                     <h3>Escrow & Payment Gateway</h3>
-                    <p>
-                        <strong>Problem:</strong> Traditional payment systems lack transparency and trust for
-                        milestone-based transactions.<br><br>
-                        <strong>Solution:</strong> Designed and built secure escrow smart contracts with milestone-based
-                        fund releases,
-                        integrated with Oracle systems for multi-currency support. Implemented gasless transactions for
-                        seamless user experience.
-                    </p>
+                    <div class="card-desc-wrap">
+                        <p class="card-desc">
+                            <strong>Problem:</strong> Traditional payment systems lack transparency and trust for
+                            milestone-based transactions.<br><br>
+                            <strong>Solution:</strong> Designed and built secure escrow smart contracts with
+                            milestone-based
+                            fund releases,
+                            integrated with Oracle systems for multi-currency support. Implemented gasless transactions
+                            for
+                            seamless user experience.
+                        </p>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
                     <div class="project-tech">
                         <span>Solidity</span>
                         <span>Hardhat</span>
@@ -1302,16 +1372,21 @@
                         <i class="fas fa-network-wired"></i>
                     </div>
                     <h3>Blockchain Migration</h3>
-                    <p>
-                        <strong>Problem:</strong> Ethereum Layer-2 solutions struggle with sustainability, scalability
-                        under peak demand, and latency caused by reliance on Layer-1 settlement, which limits their
-                        effectiveness for high-traffic applications.<br><br>
-                        <strong>Solution:</strong> Forked Solana blockchain (sustainable, fast, and cheaper),
-                        implemented
-                        custom native token with unique
-                        tokenomics.
-                        Deployed multi-node devnet clusters, conducted TPS benchmarking, and built staking mechanisms.
-                    </p>
+                    <div class="card-desc-wrap">
+                        <p class="card-desc">
+                            <strong>Problem:</strong> Ethereum Layer-2 solutions struggle with sustainability,
+                            scalability
+                            under peak demand, and latency caused by reliance on Layer-1 settlement, which limits their
+                            effectiveness for high-traffic applications.<br><br>
+                            <strong>Solution:</strong> Forked Solana blockchain (sustainable, fast, and cheaper),
+                            implemented custom native token with unique tokenomics.
+                            Deployed multi-node devnet clusters, conducted TPS benchmarking, and built staking
+                            mechanisms.
+                        </p>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
                     <div class="project-tech">
                         <span>Rust</span>
                         <span>Solana</span>
@@ -1326,13 +1401,19 @@
                         <i class="fas fa-coins"></i>
                     </div>
                     <h3>Staking & Masternode DApps</h3>
-                    <p>
-                        <strong>Problem:</strong> Users need intuitive interfaces to participate in network staking and
-                        run masternodes.<br><br>
-                        <strong>Solution:</strong> Built full-featured staking and masternode DApps with real-time
-                        rewards tracking,
-                        validator status monitoring, and seamless wallet integrations using Wagmi and Viem.
-                    </p>
+                    <div class="card-desc-wrap">
+                        <p class="card-desc">
+                            <strong>Problem:</strong> Users need intuitive interfaces to participate in network staking
+                            and
+                            run masternodes.<br><br>
+                            <strong>Solution:</strong> Built full-featured staking and masternode DApps with real-time
+                            rewards tracking,
+                            validator status monitoring, and seamless wallet integrations using Wagmi and Viem.
+                        </p>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
                     <div class="project-tech">
                         <span>React</span>
                         <span>Wagmi</span>
@@ -1349,13 +1430,20 @@
                     <h3>File Pilot <a href="https://www.filepilot.space/" target="_blank"
                             style="font-size: 0.8em; margin-left: 0.5rem; color: var(--accent-primary);"><i
                                 class="fas fa-external-link-alt"></i></a></h3>
-                    <p>
-                        <strong>Problem:</strong> Most online PDF tools require file uploads, compromising user privacy
-                        and document security.<br><br>
-                        <strong>Solution:</strong> Developed a privacy-first, browser-based PDF utility suite. All
-                        operations (merge, split, compress, convert) run 100% client-side using WebAssembly, ensuring
-                        files never leave the user's device.
-                    </p>
+                    <div class="card-desc-wrap">
+                        <p class="card-desc">
+                            <strong>Problem:</strong> Most online PDF tools require file uploads, compromising user
+                            privacy
+                            and document security.<br><br>
+                            <strong>Solution:</strong> Developed a privacy-first, browser-based PDF utility suite. All
+                            operations (merge, split, compress, convert) run 100% client-side using WebAssembly,
+                            ensuring
+                            files never leave the user's device.
+                        </p>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
                     <div class="project-tech">
                         <span>React</span>
                         <span>TypeScript</span>
@@ -1370,17 +1458,23 @@
                         <i class="fas fa-fingerprint"></i>
                     </div>
                     <h3>Blockchain Identity & Document Workflow Platform</h3>
-                    <p>
-                        <strong>Problem:</strong> Traditional KYC/KYB systems expose raw PII, lack auditability, and
-                        provide no user-controlled data sharing or verifiable credential portability.<br><br>
-                        <strong>Solution:</strong> Built a full-stack identity and document workflow platform combining
-                        a Next.js frontend, Express backend, and Solidity smart contracts. Features include KYC/KYB
-                        review workflows, soulbound identity tokens (non-transferable on-chain proof), selective
-                        data-access control, wallet-based document signing (DocuSign-style envelopes with EIP-712),
-                        transaction proof tokenization, encrypted off-chain storage via IPFS/Pinata, and
-                        role-based admin/verifier dashboards — keeping sensitive data off-chain while preserving
-                        on-chain verifiability.
-                    </p>
+                    <div class="card-desc-wrap">
+                        <p class="card-desc">
+                            <strong>Problem:</strong> Traditional KYC/KYB systems expose raw PII, lack auditability, and
+                            provide no user-controlled data sharing or verifiable credential portability.<br><br>
+                            <strong>Solution:</strong> Built a full-stack identity and document workflow platform
+                            combining
+                            a Next.js frontend, Express backend, and Solidity smart contracts. Features include KYC/KYB
+                            review workflows, soulbound identity tokens (non-transferable on-chain proof), selective
+                            data-access control, wallet-based document signing (DocuSign-style envelopes with EIP-712),
+                            transaction proof tokenization, encrypted off-chain storage via IPFS/Pinata, and
+                            role-based admin/verifier dashboards — keeping sensitive data off-chain while preserving
+                            on-chain verifiability.
+                        </p>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Read More <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
                     <div class="project-tech">
                         <span>Solidity</span>
                         <span>Hardhat</span>
@@ -1528,6 +1622,14 @@
 
     <!-- Scripts -->
     <script>
+        // Read More toggle
+        function toggleReadMore(btn) {
+            const desc = btn.previousElementSibling;
+            const expanded = desc.classList.toggle('expanded');
+            btn.classList.toggle('expanded', expanded);
+            btn.childNodes[0].textContent = expanded ? 'Read Less ' : 'Read More ';
+        }
+
         // Mobile Navigation Toggle
         const navToggle = document.getElementById('navToggle');
         const navMenu = document.getElementById('navMenu');
