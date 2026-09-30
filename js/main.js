@@ -8,35 +8,68 @@
     const yearEl = $('#year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    // ===== Theme toggle (circular reveal where supported) =====
+    // ===== Theme toggle (sunrise / sunset) =====
     const themeToggle = $('#themeToggle');
+    const skyFx = $('.sky-fx');
     const setTheme = (theme) => {
         root.setAttribute('data-theme', theme);
         try { localStorage.setItem('theme', theme); } catch (e) { /* storage unavailable */ }
-        themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+        themeToggle.setAttribute('aria-checked', String(theme === 'dark'));
         const meta = $('meta[name="theme-color"]');
         if (meta) meta.setAttribute('content', theme === 'dark' ? '#0a0a0f' : '#f7f7fb');
     };
     setTheme(root.getAttribute('data-theme') || 'dark');
 
-    themeToggle.addEventListener('click', (e) => {
+    let switching = false;
+    themeToggle.addEventListener('click', () => {
+        if (switching) return;
         const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        const toNight = next === 'dark';
 
-        if (!document.startViewTransition || reduceMotion) {
+        if (reduceMotion) {
+            setTheme(next);
+            return;
+        }
+
+        switching = true;
+        setTimeout(() => { switching = false; }, 1100);
+
+        // Dusk flash inside the switch
+        themeToggle.classList.remove('is-animating');
+        void themeToggle.offsetWidth;
+        themeToggle.classList.add('is-animating');
+        setTimeout(() => themeToggle.classList.remove('is-animating'), 1100);
+
+        // Warm wash over the page
+        skyFx.className = 'sky-fx';
+        void skyFx.offsetWidth;
+        skyFx.classList.add(toNight ? 'sunset' : 'sunrise');
+        setTimeout(() => { skyFx.className = 'sky-fx'; }, 1300);
+
+        if (!document.startViewTransition) {
             root.classList.add('theme-transition');
             setTheme(next);
             setTimeout(() => root.classList.remove('theme-transition'), 550);
             return;
         }
 
-        const x = e.clientX || window.innerWidth - 40;
-        const y = e.clientY || 36;
-        const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+        // Sunset: night falls from the top. Sunrise: daylight rises from the horizon.
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        const radius = Math.hypot(w / 2, h) * 1.05;
+        const clipPath = toNight
+            ? ['inset(0 0 100% 0)', 'inset(0 0 0% 0)']
+            : [`circle(0px at 50% ${h + 40}px)`, `circle(${radius}px at 50% ${h + 40}px)`];
+
         const transition = document.startViewTransition(() => setTheme(next));
         transition.ready.then(() => {
             root.animate(
-                { clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`] },
-                { duration: 650, easing: 'cubic-bezier(0.22, 1, 0.36, 1)', pseudoElement: '::view-transition-new(root)' }
+                { clipPath },
+                {
+                    duration: toNight ? 900 : 1000,
+                    easing: toNight ? 'cubic-bezier(0.65, 0, 0.35, 1)' : 'cubic-bezier(0.22, 1, 0.36, 1)',
+                    pseudoElement: '::view-transition-new(root)'
+                }
             );
         });
     });

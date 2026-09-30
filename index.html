@@ -116,6 +116,7 @@
     </svg>
     <a href="#main" class="skip-link">Skip to content</a>
     <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="sky-fx" aria-hidden="true"></div>
 
     <!-- Navigation -->
     <nav class="navbar" aria-label="Primary">
@@ -132,9 +133,17 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="navbar-actions">
-                <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
-                    <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
-                    <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+                <button class="theme-switch" id="themeToggle" type="button" role="switch" aria-checked="true"
+                    aria-label="Dark mode">
+                    <span class="ts-sky ts-sky-day" aria-hidden="true"></span>
+                    <span class="ts-sky ts-sky-dusk" aria-hidden="true"></span>
+                    <span class="ts-sky ts-sky-night" aria-hidden="true"></span>
+                    <span class="ts-stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                    <span class="ts-cloud ts-cloud-1" aria-hidden="true"></span>
+                    <span class="ts-cloud ts-cloud-2" aria-hidden="true"></span>
+                    <span class="ts-sun" aria-hidden="true"></span>
+                    <span class="ts-moon" aria-hidden="true"></span>
+                    <span class="ts-hills" aria-hidden="true"></span>
                 </button>
                 <button class="icon-btn navbar-toggle" id="navToggle" type="button" aria-label="Toggle navigation"
                     aria-controls="navMenu" aria-expanded="false">
